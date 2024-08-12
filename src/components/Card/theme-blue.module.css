@@ -1,0 +1,15 @@
+.card {
+  display: grid;
+  grid-template: repeat(4, auto) / 1fr;
+  text-align: center;
+}
+
+.item__header {
+  background-color: #2698b0;
+  color: #f9feff;
+}
+
+.item__main {
+  background-color: #2cc1d5;
+  color: #f9feff;
+}

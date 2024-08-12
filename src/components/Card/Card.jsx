@@ -1,15 +1,15 @@
 import styles from "./card.module.css";
 
 export default function Card(props) {
-  const { price, speed } = props;
+  const { price, speed, theme } = props;
 
   return (
-    <div className={styles.card}>
-      <div className={styles.item__header}>
+    <div className={theme.card}>
+      <div className={theme.item__header}>
         <h4 className="header-title">Безлимитный {price}</h4>
       </div>
 
-      <div className={styles.item__main}>
+      <div className={theme.item__main}>
         <p className={styles.main__text}>
           <span className={styles.main__upperText}>руб </span>
           {price}

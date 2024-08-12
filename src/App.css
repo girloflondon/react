@@ -1,8 +1,5 @@
-.container {
+.app__container {
+  height: 100vh;
   padding: 10vh 2vw;
-  display: grid;
-  grid-template: 1fr / repeat(4, auto);
-  justify-content: center;
-  grid-gap: 2px;
   background-color: #fafafa;
 }
