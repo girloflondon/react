@@ -1,10 +1,13 @@
+import { useState } from "react";
 import styles from "./card.module.css";
 
-export default function Card(props) {
-  const { price, speed, theme } = props;
-
+export default function Card({ price, speed, theme }) {
+  const [selected, setSelected] = useState(false);
   return (
-    <div className={theme.card}>
+    <div
+      onClick={() => setSelected(!selected)}
+      className={`${styles.card} ${selected ? styles.cardSelected : ""}`}
+    >
       <div className={theme.item__header}>
         <h4 className="header-title">Безлимитный {price}</h4>
       </div>
@@ -22,7 +25,7 @@ export default function Card(props) {
           <p className="footer__text">до {speed} Мбит/сек</p>
         </div>
         <div className={styles.footer__bottom}>
-          <p footer__text>Объём включённого трафика не ограничен</p>
+          <p>Объём включённого трафика не ограничен</p>
         </div>
       </div>
     </div>

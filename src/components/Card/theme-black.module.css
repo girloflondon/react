@@ -1,7 +1,6 @@
 .card {
   display: grid;
   grid-template: repeat(4, auto) / 1fr;
-  text-align: center;
 }
 
 .item__header {
